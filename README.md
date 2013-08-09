@@ -4,8 +4,9 @@
 4. Add cookbooks to the Cheffile
     * [https://github.com/opscode-cookbooks][4]
     * [http://community.opscode.com/search][5]
-5. Start it up!
 
+
+Start it up!
 
     :::bash
         $ vagrant plugin install vagrant-librarian-chef
