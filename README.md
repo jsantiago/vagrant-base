@@ -1,17 +1,15 @@
-Install [VirtualBox][1]
-
-Install [Vagrant][2]
-
-Install [librarian-chef plugin][3]
+1. Install [VirtualBox][1]
+2. Install [Vagrant][2]
+3. Install [librarian-chef plugin][3]
 
     :::bash
         $ vagrant plugin install vagrant-librarian-chef
 
-Add cookbooks to the Cheffile
-[https://github.com/opscode-cookbooks][4]
-[http://community.opscode.com/search][5]
+4. Add cookbooks to the Cheffile
+    * [https://github.com/opscode-cookbooks][4]
+    * [http://community.opscode.com/search][5]
 
-Start it up!
+5. Start it up!
 
     :::bash
         $ vagrant up
