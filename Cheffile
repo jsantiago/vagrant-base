@@ -17,5 +17,5 @@ cookbook 'nodejs',
     git: 'https://github.com/mdxp/nodejs-cookbook.git'
 
 #cookbook 'nvm',
-#    git: 'https://github.com/hipsnip-cookbooks/nvm'
+#    git: 'https://github.com/hipsnip-cookbooks/nvm.git'
 
