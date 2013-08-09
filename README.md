@@ -1,19 +1,24 @@
-# Install VirtualBox
-https://www.virtualbox.org/wiki/Downloads
+Install [VirtualBox][1]
 
-# Install Vagrant
-http://downloads.vagrantup.com/
+Install [Vagrant][2]
 
-# Install librarian-chef plugin
-https://github.com/jimmycuadra/vagrant-librarian-chef
+Install [librarian-chef plugin][3]
 
     :::bash
         $ vagrant plugin install vagrant-librarian-chef
 
-# Add cookbooks to the Cheffile
-# https://github.com/opscode-cookbooks
-# http://community.opscode.com/search
+Add cookbooks to the Cheffile
+[https://github.com/opscode-cookbooks][4]
+[http://community.opscode.com/search][5]
 
-# Start it up!
-:::bash
-    $ vagrant up
+Start it up!
+
+    :::bash
+        $ vagrant up
+
+
+[1]: https://www.virtualbox.org/wiki/Downloads
+[2]: http://downloads.vagrantup.com/
+[3]: https://github.com/jimmycuadra/vagrant-librarian-chef
+[4]: https://github.com/opscode-cookbooks
+[5]: http://community.opscode.com/search
