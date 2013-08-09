@@ -8,6 +8,7 @@ cookbook 'build-essential'
 cookbook 'git'
 cookbook 'gunicorn'
 cookbook 'nginx'
+cookbook 'npm'
 cookbook 'ohai'
 cookbook 'python'
 cookbook 'screen'
@@ -15,7 +16,4 @@ cookbook 'vim'
 
 cookbook 'nodejs',
     git: 'https://github.com/mdxp/nodejs-cookbook.git'
-
-#cookbook 'nvm',
-#    git: 'https://github.com/hipsnip-cookbooks/nvm.git'
 
