@@ -4,6 +4,8 @@ Vagrant.configure("2") do |config|
 
     config.vm.network :forwarded_port, guest: 80, host: 9000, auto_correct: true
 
+    config.vm.synced_folder "~/.dotfiles", "/home/vagrant/.dotfiles"
+
     config.vm.provision :chef_solo do |chef|
         chef.cookbooks_path = ["cookbooks", "local-cookbooks"]
 
