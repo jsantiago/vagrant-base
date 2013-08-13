@@ -7,11 +7,13 @@ cookbook 'apt', '1.10.0'
 cookbook 'build-essential'
 cookbook 'git'
 cookbook 'gunicorn'
+cookbook 'java'
 cookbook 'nginx'
 cookbook 'ohai'
 cookbook 'python'
 cookbook 'screen'
 cookbook 'vim'
+cookbook 'zip'
 
 cookbook 'nodejs',
     git: 'https://github.com/mdxp/nodejs-cookbook.git'

@@ -15,16 +15,23 @@ Vagrant.configure("2") do |config|
         chef.add_recipe "build-essential"
         chef.add_recipe "git"
         chef.add_recipe "gunicorn"
+        chef.add_recipe "java"
         chef.add_recipe "nginx"
         chef.add_recipe "ohai"
         chef.add_recipe "python"
         chef.add_recipe "screen"
         chef.add_recipe "vim"
+        chef.add_recipe "zip"
 
         chef.add_recipe "nodejs"
         chef.add_recipe "nodejs::npm"
 
         chef.json = {
+            'java' => {
+                'oracle' => {
+                    'accept_oracle_download_terms' => true
+                }
+            },
             'nodejs' => {
                 'version' => '0.11.0',
                 'npm' => '1.2.15'
