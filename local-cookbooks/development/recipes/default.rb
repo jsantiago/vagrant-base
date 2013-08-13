@@ -6,3 +6,6 @@ include_recipe 'development::ssh-key'
 
 # install dotfiles
 include_recipe 'development::dotfiles'
+
+# install rake
+include_recipe 'development::rake'
