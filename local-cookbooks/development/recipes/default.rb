@@ -1,3 +1,6 @@
+# install dependencies with apt
+include_recipe 'development::apt'
+
 # provisions global node packages
 include_recipe 'development::npm'
 
@@ -9,3 +12,6 @@ include_recipe 'development::dotfiles'
 
 # install rake
 include_recipe 'development::rake'
+
+# install gems
+include_recipe 'development::gems'
