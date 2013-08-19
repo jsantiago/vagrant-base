@@ -1,5 +1,5 @@
 execute "install dotfiles" do
     command "su -l vagrant -c 'cd /home/vagrant/.dotfiles && bash -i ./dotfiles'"
     action :run
-    not_if { ::File.exists?("/home/vagrant/.vimrc") }
+    only_if { ::File.directory?("/home/vagrant/.dotfiles") }
 end
