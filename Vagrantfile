@@ -16,6 +16,7 @@ Vagrant.configure("2") do |config|
         chef.add_recipe "git"
         chef.add_recipe "gunicorn"
         chef.add_recipe "java"
+        chef.add_recipe "mongodb"
         chef.add_recipe "nginx"
         chef.add_recipe "ohai"
         chef.add_recipe "python"
