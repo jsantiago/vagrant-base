@@ -3,7 +3,8 @@ Vagrant.configure("2") do |config|
     config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
     config.vm.network :forwarded_port, guest: 80, host: 9000, auto_correct: true
-    config.vm.network :forwarded_port, guest: 7076, host: 7076, auto_correct: true
+
+    config.vm.network :private_network, ip: "10.10.10.10"
 
     config.vm.synced_folder "~/.dotfiles", "/home/vagrant/.dotfiles"
     config.vm.synced_folder "~/mount/vagrant", "/home/vagrant/working"
@@ -33,6 +34,9 @@ Vagrant.configure("2") do |config|
                 'oracle' => {
                     'accept_oracle_download_terms' => true
                 }
+            },
+            'nginx' => {
+                'default_site_enabled' => false
             },
             'nodejs' => {
                 'version' => '0.11.0',

@@ -6,6 +6,7 @@ default.development.application.npm_packages = {
 
 # defines apt packages to install
 default.development.application.apt_packages = [
+    'apache2-utils',
     'libxslt-dev',
     'libxml2-dev'
 ]
