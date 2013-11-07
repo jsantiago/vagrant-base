@@ -13,6 +13,7 @@ cookbook 'nginx'
 cookbook 'ohai'
 cookbook 'python'
 cookbook 'screen'
+cookbook 'sqlite'
 cookbook 'vim'
 cookbook 'zip'
 
