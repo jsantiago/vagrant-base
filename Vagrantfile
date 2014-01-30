@@ -6,6 +6,8 @@ Vagrant.configure("2") do |config|
 
     config.vm.network :private_network, ip: "10.10.10.10"
 
+    config.ssh.forward_agent = true
+
     config.vm.synced_folder "~/.dotfiles", "/home/vagrant/.dotfiles"
     config.vm.synced_folder "~/mount/vagrant", "/home/vagrant/working"
 
@@ -40,8 +42,8 @@ Vagrant.configure("2") do |config|
                 'default_site_enabled' => false
             },
             'nodejs' => {
-                'version' => '0.11.0',
-                'npm' => '1.2.15'
+                'version' => '0.10.25',
+                'npm' => '1.3.25'
             }
         }
 
