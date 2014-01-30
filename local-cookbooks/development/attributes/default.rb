@@ -1,7 +1,8 @@
 # defines npm packages to install globally
 default.development.application.npm_packages = {
-    'grunt-cli' => '0.1.9',
-    'bower'     => '1.1.1'
+    'grunt-cli' => '0.1.13',
+    'bower'     => '1.2.8',
+    'gulp'      => '3.5.0'
 }
 
 # defines apt packages to install
@@ -13,5 +14,4 @@ default.development.application.apt_packages = [
 
 # defines gems to install
 default.development.application.gems = [
-    'aws-sdk'
 ]
