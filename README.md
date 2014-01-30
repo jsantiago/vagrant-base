@@ -13,6 +13,14 @@ Start it up!
         $ vagrant up
 
 
+Make sure your SSH key has been added to the `ssh-agent`
+
+    :::bash
+        # Add if not already added
+        key_file=~/.ssh/id_rsa
+        [[ -z $(ssh-add -L | grep $key_file) ]] && ssh-add $key_file
+
+
 [1]: https://www.virtualbox.org/wiki/Downloads
 [2]: http://downloads.vagrantup.com/
 [3]: https://github.com/jimmycuadra/vagrant-librarian-chef
