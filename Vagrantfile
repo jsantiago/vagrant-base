@@ -23,6 +23,7 @@ Vagrant.configure("2") do |config|
         chef.add_recipe "mongodb"
         chef.add_recipe "nginx"
         chef.add_recipe "ohai"
+        chef.add_recipe "postgresql"
         chef.add_recipe "python"
         chef.add_recipe "screen"
         chef.add_recipe "sqlite"
