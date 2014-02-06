@@ -11,6 +11,10 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder "~/.dotfiles", "/home/vagrant/.dotfiles"
     config.vm.synced_folder "~/mount/vagrant", "/home/vagrant/working"
 
+    config.vm.provider "virtualbox" do |v|
+        v.memory = 1024
+    end
+
     config.vm.provision :chef_solo do |chef|
         chef.cookbooks_path = ["cookbooks", "local-cookbooks"]
 
@@ -23,7 +27,6 @@ Vagrant.configure("2") do |config|
         chef.add_recipe "mongodb"
         chef.add_recipe "nginx"
         chef.add_recipe "ohai"
-        chef.add_recipe "postgresql"
         chef.add_recipe "python"
         chef.add_recipe "screen"
         chef.add_recipe "sqlite"
