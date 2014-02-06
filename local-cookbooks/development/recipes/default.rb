@@ -1,3 +1,6 @@
+# update locale language to be UTF8
+include_recipe 'development::set_locale'
+
 # install dependencies with apt
 include_recipe 'development::apt'
 
