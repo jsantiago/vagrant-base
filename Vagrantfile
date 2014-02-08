@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder "~/mount/vagrant", "/home/vagrant/working"
 
     config.vm.provider "virtualbox" do |v|
-        v.memory = 1024
+        v.memory = 2048
     end
 
     config.vm.provision :chef_solo do |chef|
