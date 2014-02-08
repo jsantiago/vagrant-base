@@ -9,7 +9,8 @@ default.development.application.npm_packages = {
 default.development.application.apt_packages = [
     'apache2-utils',
     'libxslt-dev',
-    'libxml2-dev'
+    'libxml2-dev',
+    'redis-server'
 ]
 
 # defines gems to install
