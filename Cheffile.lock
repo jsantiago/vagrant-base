@@ -39,6 +39,7 @@ SITE
       chef_handler (>= 0.0.0)
     yum (2.3.0)
     zip (1.0.0)
+    zsh (1.0.0)
 
 GIT
   remote: https://github.com/mdxp/nodejs-cookbook.git
@@ -64,4 +65,5 @@ DEPENDENCIES
   sqlite (>= 0)
   vim (>= 0)
   zip (>= 0)
+  zsh (>= 0)
 

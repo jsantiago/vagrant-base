@@ -16,6 +16,7 @@ cookbook 'screen'
 cookbook 'sqlite'
 cookbook 'vim'
 cookbook 'zip'
+cookbook 'zsh'
 
 cookbook 'nodejs',
     git: 'https://github.com/mdxp/nodejs-cookbook.git'

@@ -18,3 +18,7 @@ include_recipe 'development::rake'
 
 # install gems
 include_recipe 'development::gems'
+
+# install zsh
+include_recipe 'development::zsh'
+include_recipe 'development::prezto'
