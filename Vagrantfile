@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     config.ssh.forward_agent = true
 
     config.vm.synced_folder "~/.dotfiles", "/home/vagrant/.dotfiles"
-    config.vm.synced_folder "~/mount/vagrant", "/home/vagrant/working"
+    config.vm.synced_folder "~/working", "/home/vagrant/working"
 
     config.vm.provider "virtualbox" do |v|
         v.memory = 2048
